@@ -1658,8 +1658,13 @@ tag(const Arg *arg)
 {
 	if (selmon->sel && arg->ui & TAGMASK) {
 		selmon->sel->tags = arg->ui & TAGMASK;
-		focus(NULL);
-		arrange(selmon);
+
+		if ( follow_tag ) {
+		        view(arg);
+		} else {
+		        focus(NULL);
+		        arrange(selmon);
+		}
 	}
 }
 
