@@ -735,6 +735,8 @@ drawbar(Monitor *m)
 
 			if (display_window_name) {
 			  drw_text(drw, x, 0, w, bh, lrpad / 2, m->sel->name, 0);
+			} else {
+			  drw_text(drw, x, 0, w, bh, lrpad / 2, "", 0);
 			}
 
 			if (m->sel->isfloating)
