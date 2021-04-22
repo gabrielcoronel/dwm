@@ -16,7 +16,7 @@ static const char *fonts[]          = { "SourceCodePro:size=11" };
 static const int display_window_name = 0; /* Non-zero means to display the window name in the bar */
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4", "5" };
 
 static const Rule rules[] = {
 	/* xprop(1):
